@@ -7,14 +7,48 @@ import "./BedGrid.css"
 
 function BedGrid() {
     return (
-
-    <Row>
-      {Array.from({ length: 16 }).map((_, idx) => (
+  <>
+      <Row>
+          <Col>
+            <BedIcon className='to-be-edited'/>
+          </Col>
+          <Col>
+            <BedIcon className='to-be-edited'/>
+          </Col>
+          <Col>
+            <BedIcon className='to-be-edited'/>
+          </Col>
+          <Col>
+            <BedIcon className='to-be-edited'/>
+          </Col>
+          <Col>
+            <BedIcon className='to-be-edited'/>
+          </Col>
+          <Col>
+            <BedIcon className='to-be-edited'/>
+          </Col>
+      </Row>
+      <Row>
+      <Col>
+        <BedIcon className='to-be-edited'/>
+        </Col>
+        <Col>
+          <div>No Bed</div> 
+        </Col>
         <Col>
           <BedIcon className='to-be-edited'/>
         </Col>
-      ))}
-    </Row>
+        <Col>
+          <BedIcon className='to-be-edited'/>
+        </Col>
+        <Col>
+          <BedIcon className='to-be-edited'/>
+        </Col>
+        <Col>
+          <BedIcon className='to-be-edited'/>
+        </Col>
+      </Row>
+    </>
   );
 }
 
