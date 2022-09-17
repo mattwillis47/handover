@@ -1,30 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Bed from '../Bed/Bed';
-import { BEDDATA } from '../../Data/BedData';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Occupants from '../Occupants/Occupants';
 import AddPatientForm from "../AddPatient/AddPatient"
 import BedOccupantLinking from '../BedOccupantLinking/BedOccupantLinking';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Dashboard from '../Dasboard/Dashboard';
+import BedIcon from '../BedIcon/BedIcon';
+import BedGrid from '../BedGrid/BedGrid';
 
 
 function App() {
 
-  const [bedData, setBedData] = useState(BEDDATA);
 
   return (
+    <BrowserRouter>
+      <div className="App">
+          <header className="App-header">
+          </header>
 
-    <div className="App">
-        <header className="App-header">
-        </header>
-
-        <main>
-            <BedOccupantLinking />
-            <AddPatientForm />
-        </main>
-    </div>
-
+          <main>
+          <Routes>
+              <Route path='/' element={<Dashboard />}>
+                <Route path='bed-occupant' element={<BedOccupantLinking />} />
+                <Route path='bed-layout' element={<BedGrid />} />
+              </Route>
+          </Routes> 
+          </main>
+      </div>
+    </BrowserRouter>
 
   );
 }
