@@ -9,6 +9,9 @@ import calculateDays from '../../Functions/DateFunctions';
 
 
 const Occupant = (props) => {
+
+    const  [rating, setRating] = useState(0);
+
     return (
         <>
             <Card className='card'>
