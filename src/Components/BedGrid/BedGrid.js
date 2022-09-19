@@ -1,53 +1,109 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import BedIcon from '../BedIcon/BedIcon';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./BedGrid.css"
+import Bed from '../Bed/Bed';
+import Beds from '../Beds/Beds';
+
 
 function BedGrid() {
-    return (
+
+  const beds = Beds();
+
+  
+
+
+  return (
   <>
       <Row>
-          <Col>
-            <BedIcon className='to-be-edited'/>
+          <Col sm={2}>
+            <Bed key='1' />
           </Col>
-          <Col>
-            <BedIcon className='to-be-edited'/>
+          <Col sm={2}>
+            
           </Col>
-          <Col>
-            <BedIcon className='to-be-edited'/>
+          <Col sm={2}>
+
           </Col>
-          <Col>
-            <BedIcon className='to-be-edited'/>
+          <Col sm={2}>
+       
           </Col>
-          <Col>
-            <BedIcon className='to-be-edited'/>
+          <Col sm={2}>
+
           </Col>
-          <Col>
-            <BedIcon className='to-be-edited'/>
+          <Col sm={2}>
+
           </Col>
       </Row>
       <Row>
-      <Col>
-        <BedIcon className='to-be-edited'/>
+        <Col sm={2}>
+
         </Col>
-        <Col>
-          <div>No Bed</div> 
+        <Col sm={8}>
         </Col>
-        <Col>
-          <BedIcon className='to-be-edited'/>
-        </Col>
-        <Col>
-          <BedIcon className='to-be-edited'/>
-        </Col>
-        <Col>
-          <BedIcon className='to-be-edited'/>
-        </Col>
-        <Col>
-          <BedIcon className='to-be-edited'/>
+        <Col sm={2}>
+
         </Col>
       </Row>
+      <Row>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={8}>
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={8}>
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={8}>
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={8}>
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={4}>
+
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+        <Col sm={2}>
+
+        </Col>
+      </Row>
+
     </>
   );
 }

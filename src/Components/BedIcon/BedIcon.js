@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import '../BedGrid/BedGrid.css';
 
-function BedIcon() {
+function BedIcon(props) {
     return (
-        <Card>
+        <Card border={props.border} bg={props.bg} style={{height:'20rem'}}>
             <Card.Header>Bed #</Card.Header>
             <Card.Body>
                 <Card.Title>This is a bed</Card.Title>
