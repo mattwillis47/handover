@@ -8,6 +8,7 @@ function Rating(props) {
     return (
         <div style={styles.starStyle}>
             <h3 style={styles.h1}>Acuity Rating: {rating}</h3>
+            
             {rating >= 1?(
                 <IoIosStar onClick={() => setRating(1)}/>
             ) : (

@@ -31,7 +31,9 @@ function Occupants() {
                 mentalHealth: {
                     hasMentalHealthConcerns: false,
                     needsRMN: false,
-                }
+                },
+                acuityRating: 2,
+
 
             },
         
@@ -61,15 +63,12 @@ function Occupants() {
                 mentalHealth: {
                     hasMentalHealthConcerns: false,
                     needsRMN: false,
-                    }
+                    },
+                acuityRating: 2,
 
             }
         ];
     };
-
-    const addOccupants = (someString) => {
-        console.log(someString)
-    }
 
     const occupants = getOccupants();
 
